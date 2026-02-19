@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StrangerMC</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+<div class="logo" onclick="scrollToTop()">StrangerMC</div>
+<div class="menu">
+<button class="menu-btn" id="menuBtn">Меню</button>
+<div class="dropdown" id="dropdown">
+<a href="#" onclick="openPage('shop')">🛒 Магазин</a>
+<a href="#" onclick="openPage('guides')">📚 Гайды</a>
+<a href="#" onclick="openPage('gallery')">📸 Галерея</a>
+<a href="#" onclick="openPage('commands')">⚡ Команды</a>
+<a href="#" onclick="openPage('contacts')">📞 Контакты</a>
+</div>
+</div>
+</div>
+
+<section class="hero" id="hero">
+<h1>StrangerMC</h1>
+<p>Лучший Minecraft сервер с донатом</p>
+<button class="main-btn" onclick="scrollToIP()">Начать играть</button>
+</section>
+
+<section class="ip-section" id="ip">
+<h2>IP Сервера</h2>
+<div class="ip-box" onclick="copyIP()">
+<h2>play.strangermc.ru</h2>
+<p>Версия: 1.20+</p>
+<p>Онлайн: 124 игрока</p>
+</div>
+</section>
+
+<!-- ВКЛАДКИ -->
+<div class="pages-container">
+<div id="shop" class="page">
+<h1>МАГАЗИН</h1>
+<div class="content-grid">
+<div class="content-card">
+<h3>VIP</h3>
+<p>▶ Киты каждые 12 часов</p>
+<p>▶ Специальные команды</p>
+<p>▶ Выделенный цвет в чате</p>
+<p class="price" style="color:red; font-size:24px; margin-top:20px;">499 ₽</p>
+</div>
+<div class="content-card">
+<h3>PREMIUM</h3>
+<p>▶ Все из VIP</p>
+<p>▶ Киты каждые 6 часов</p>
+<p>▶ Доступ к /fly</p>
+<p>▶ Приватный сервер</p>
+<p class="price" style="color:red; font-size:24px; margin-top:20px;">999 ₽</p>
+</div>
+<div class="content-card">
+<h3>SPONSOR</h3>
+<p>▶ Все из PREMIUM</p>
+<p>▶ Киты каждые 3 часа</p>
+<p>▶ Эксклюзивные скины</p>
+<p>▶ Доступ к креативу</p>
+<p class="price" style="color:red; font-size:24px; margin-top:20px;">1999 ₽</p>
+</div>
+</div>
+</div>
+
+<div id="guides" class="page">
+<h1>ГАЙДЫ ДЛЯ НОВИЧКОВ</h1>
+<div class="content-grid">
+<div class="content-card">
+<h3>Как начать играть?</h3>
+<p>1. Скачай Minecraft 1.20+</p>
+<p>2. Введи IP: play.strangermc.ru</p>
+<p>3. Пройди регистрацию</p>
+<p>4. Получи стартовый набор</p>
+</div>
+<div class="content-card">
+<h3>Первые шаги</h3>
+<p>▶ Собери ресурсы</p>
+<p>▶ Найди друзей</p>
+<p>▶ Построй дом</p>
+<p>▶ Участвуй в ивентах</p>
+</div>
+<div class="content-card">
+<h3>Полезные советы</h3>
+<p>▶ Используй /spawn</p>
+<p>▶ Участвуй в кланах</p>
+<p>▶ Покупай приваты</p>
+<p>▶ Прокачивай навыки</p>
+</div>
+</div>
+</div>
+
+<div id="gallery" class="page">
+<h1>ГАЛЕРЕЯ</h1>
+<div class="gallery-grid">
+<div class="gallery-item">Скриншот 1</div>
+<div class="gallery-item">Скриншот 2</div>
+<div class="gallery-item">Скриншот 3</div>
+<div class="gallery-item">Скриншот 4</div>
+<div class="gallery-item">Скриншот 5</div>
+<div class="gallery-item">Скриншот 6</div>
+</div>
+</div>
+
+<div id="commands" class="page">
+<h1>КОМАНДЫ СЕРВЕРА</h1>
+<div class="commands-list">
+<div class="command-item"><span class="command">/spawn</span> <span>Телепорт на спавн</span></div>
+<div class="command-item"><span class="command">/kit</span> <span>Получить набор</span></div>
+<div class="command-item"><span class="command">/warp</span> <span>Точки телепортации</span></div>
+<div class="command-item"><span class="command">/msg [игрок]</span> <span>Личные сообщения</span></div>
+<div class="command-item"><span class="command">/f</span> <span>Кланы и фракции</span></div>
+<div class="command-item"><span class="command">/pay [игрок]</span> <span>Передать деньги</span></div>
+</div>
+</div>
+
+<div id="contacts" class="page">
+<h1>КОНТАКТЫ</h1>
+<div class="content-grid">
+<div class="content-card">
+<h3>Discord</h3>
+<p>discord.gg/strangermc</p>
+<p>▶ 5000+ участников</p>
+<p>▶ Саппорт 24/7</p>
+</div>
+<div class="content-card">
+<h3>ВКонтакте</h3>
+<p>vk.com/strangermc</p>
+<p>▶ Новости сервера</p>
+<p>▶ Конкурсы</p>
+</div>
+<div class="content-card">
+<h3>Поддержка</h3>
+<p>▶ support@strangermc.ru</p>
+<p>▶ Ответ до 1 часа</p>
+<p>▶ По всем вопросам</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-info">
+© 2026 StrangerMC — Все права защищены
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
